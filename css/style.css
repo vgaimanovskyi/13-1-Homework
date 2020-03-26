@@ -243,6 +243,7 @@ a:hover {
     flex-grow: 1;
 }
 .services-menu__link-img {
+    display: block;
     width: 100px;
     text-align: center;
 }
