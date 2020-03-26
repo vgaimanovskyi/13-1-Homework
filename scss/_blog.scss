@@ -1,0 +1,119 @@
+.page {
+    
+    &--blog-bg {
+        background-color: #b07cf7;
+    }
+
+    &__blog-header {
+        margin: 0 -15px;
+        padding: 80px 15px 40px 15px;
+    }
+}
+.blog-header {
+    max-width: 570px;
+    text-align: center;
+    margin: 0 auto;
+
+    &__caption {
+        font-size: 90px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 31px 0;
+    }
+
+    &__description {
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 300;
+        color: #fff;
+    }
+}
+.blog-block {
+    position: relative;
+    height: 310px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    &:focus,
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    &--img1 {
+        background-image: url(../images/blog/img1.jpg);
+    }
+
+    &--img2 {
+        background-image: url(../images/blog/img2.jpg);
+    }
+
+    &--img3 {
+        background-image: url(../images/blog/img3.jpg);
+    }
+
+    &__date {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        background-color: rgba(85, 92, 100, 0.5);
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 32px;
+        line-height: 28px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__month {
+        font-size: 21px;
+        font-weight: 900;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+
+    &__text {
+        padding: 25px 20px;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+    }
+
+    &__caption {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    &__autor {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
+.page__blog-btn {
+    padding: 50px 0 120px 0;
+}
+.blog-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: $BlogBtnMainColor;
+
+    &:focus,
+    &:hover {
+        color: $BlogBtnMainColor;
+        background-color: #fff;
+    }
+
+    &:active {
+        color: $BlogBtnMainColor;
+        background-color: #fff;
+        border: 2px solid $BlogBtnMainColor;
+        box-sizing: border-box;
+    }
+}

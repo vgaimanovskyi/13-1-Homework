@@ -1,0 +1,74 @@
+.page {
+
+    &--services-bg {
+        background-color: #70bfff;
+        background-image: url(../images/bg-services.jpg);
+    }
+}
+.row-services {
+    padding-top: 180px;
+    padding-bottom: 150px;
+}
+.services-menu {
+    max-width: 400px;
+    margin: 0 0 0 100px;
+
+    &__link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background-color: #fff;
+        margin: 0 0 20px 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: #aaf1aa;
+        }
+    }
+
+    &__link-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 20px;
+        font-weight: 700;
+        color: $FontTextColor;
+        line-height: 27px;
+        border-right: 1px solid #9d9d9d;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    &__link-img {
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+
+    &__img {
+        width: 55px;
+        height: 55px;
+        fill: $FontTextColor;
+    }
+}
+.services-menu__link:active .services-menu__img {
+    transform:  scale(1.1, 1.1);
+}
+.services-text {
+    margin: 140px 0 0 0;
+    
+    &__caption {
+        font-size: 90px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: capitalize;
+        text-align: right;
+    }
+}

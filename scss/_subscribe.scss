@@ -1,0 +1,55 @@
+.page--subscribe-bg {
+    background-color: #fff;
+    background-image: url(../images/bg-subscribe.jpg);
+}
+.subscribe-block {
+    padding: 140px 0 165px 0;
+}
+.subscribe-text {
+    max-width: 570px;
+
+    &__caption {
+        font-size: 40px;
+        font-weight: 700;
+        color: $FontTextColor;
+        margin: 0 0 15px 0;
+    }
+    
+    &__description {
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 300;
+        color: $FontTextColor;
+        margin: 0 0 20px 0;
+    }
+}
+.subscribe-form {
+    
+    &__input-email {
+        height: 55px;
+        width: 100%;
+        padding: 0 15px;
+        font-size: 15px;
+        font-weight: 300;
+        color: $FontTextColor;
+    }
+    
+    &__btn {
+        width: 170px;
+        display: block;
+        background-color: $SubscribeBtnMainColor;
+    
+        &:focus,
+        &:hover {
+            color: $SubscribeBtnMainColor;
+            background-color: #fff;
+        }
+        
+        &:active {
+            color: $SubscribeBtnMainColor;
+            background-color: #fff;
+            border: 2px solid $SubscribeBtnMainColor;
+            box-sizing: border-box;
+        }
+    }
+}

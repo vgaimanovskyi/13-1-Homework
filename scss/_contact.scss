@@ -1,0 +1,116 @@
+.page {
+
+    &--contact-bg {
+        background-image: url(../images/bg-contact.jpg);
+    }
+
+    &__contact-header {
+        margin: 0 -15px;
+        padding: 80px 15px 40px 15px;
+    }
+}
+.contact-header {
+    width: 370px;
+    text-align: center;
+    margin: 0 auto;
+
+    &__caption {
+        font-size: 90px;
+        font-weight: 700;
+        color: $FontTextColor;
+    }
+
+    &__description {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+        color: $FontTextColor;
+    }
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0 0 120px 0;
+
+    &__textarea,
+    &__input {
+        width: 100%;
+        height: 50px;
+        padding: 0 20px;
+        margin: 0 0 15px 0;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #61cfd4;
+        border: none;
+        transition: border 0.3s ease-in;
+    }
+
+    &__textarea {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        resize: none;
+        height: 250px;
+    }
+
+    &__textarea:focus,
+    &__input:focus {
+        background-color: $ContactFormMainColor;
+        border-left: 5px solid #355b82;
+    }
+
+    &__input:focus:invalid {
+        border-left: 5px solid #c20202;
+    }
+
+    &__input:focus:valid {
+        border-left: 5px solid #02c232;
+    }
+
+    &__textarea::-webkit-input-placeholder,
+    &__input::-webkit-input-placeholder {
+        color: #fff;
+        font-weight: 300;
+    }
+
+    &__textarea::-moz-placeholder,
+    &__input::-moz-placeholder {
+        color: #fff;
+        font-weight: 300;
+    }
+}
+.contact-btn {
+    background-color:  #355b82;
+    border-left: 5px solid $ContactFormMainColor;
+    border-right: 5px solid $ContactFormMainColor;
+    transition: border 0.2s ease-in;
+    outline: none;
+
+    &:focus,
+    &:hover {
+        border-left: 10px solid $ContactFormMainColor;
+        border-right: 10px solid $ContactFormMainColor;
+        border-top: 2px solid $ContactFormMainColor;
+        border-bottom: 2px solid $ContactFormMainColor;
+    }
+
+    &:active {
+    border-color: #fff;
+    }
+}
+.contact-block {
+    padding: 0 0 0 70px;
+
+    &__caption {
+        font-size: 17px;
+        font-weight: 700;
+        color: $FontTextColor;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 300;
+        color: $FontTextColor;
+        padding: 0 0 10px 0;
+    }
+}

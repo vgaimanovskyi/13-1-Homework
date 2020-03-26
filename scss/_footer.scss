@@ -1,0 +1,30 @@
+.page-footer {
+    max-height: 90px;
+    background-color: $FontTextColor;
+}
+.row-footer {
+    height: 100%;
+    align-items: center;
+}
+.footer-date {
+    font-size: 16px;
+    font-weight: 300;
+    color: $FooterFontTextColor;
+}
+.footer-logo {
+    font-family: $FontFamilyLogo;
+    font-size: 25px;
+    color: $FooterFontTextColor;
+    text-align: center;
+}
+.footer-autor {
+    font-size: 15px;
+    font-weight: 300;
+    color: $FooterFontTextColor;
+    text-align: right;
+
+    &--color {
+        color: #ff2b58;
+        font-weight: 700;
+    }
+}

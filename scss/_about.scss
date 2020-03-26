@@ -1,0 +1,42 @@
+.page {
+    
+    &--about-bg {
+        background-color: #00b0b0;  
+    }
+
+    &__about-cell {
+        width: 600px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
+.row-about {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.about-product {
+    margin: 0 -15px;
+
+    &__img {
+        width: 100%;
+    }
+}
+.about-text {
+    padding:  100px 15px 25px 70px;
+    margin: 0 -15px 0 0;    
+
+    &__caption {
+        font-size: 90px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: capitalize;
+    }
+
+    &__description {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+        color: #fff;
+        margin: 0 0 25px 0;
+    }
+}
