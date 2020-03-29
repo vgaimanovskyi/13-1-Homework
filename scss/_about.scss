@@ -4,15 +4,20 @@
         background-color: #00b0b0;  
     }
 
-    &__about-cell {
-        width: 600px;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
 }
 .row-about {
     padding-top: 70px;
     padding-bottom: 70px;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 .about-product {
     margin: 0 -15px;
@@ -21,15 +26,35 @@
         width: 100%;
     }
 }
+
 .about-text {
-    padding:  100px 15px 25px 70px;
-    margin: 0 -15px 0 0;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 500px;
+    margin: 0 0 0 70px;   
+    
+    @media screen and (max-width: 991px) {
+        margin: 0 auto;
+    }
 
     &__caption {
         font-size: 90px;
         font-weight: 700;
         color: #fff;
         text-transform: capitalize;
+
+        @media screen and (max-width: 991px) {
+            font-size: 60px;
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 40px;
+            margin: 0 0 15px 0;
+        }
     }
 
     &__description {
@@ -38,5 +63,26 @@
         line-height: 27px;
         color: #fff;
         margin: 0 0 25px 0;
+
+        @media screen and (max-width: 991px) {
+            font-size: 15px;
+            margin: 0 0 20px 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            margin: 0 0 15px 0;
+
+            &:nth-child(2)::before {
+                display: block;
+                float: left;
+                margin: 0 10px 0 0;
+                content: '';
+                width: 100px;
+                height: 100px;
+                background-image: url(../images/about/plate.png);
+                background-size: cover;
+            }
+        }
     }
 }

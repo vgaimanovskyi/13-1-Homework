@@ -10,18 +10,42 @@
     font-size: 16px;
     font-weight: 300;
     color: $FooterFontTextColor;
+
+    @media screen and (max-width: 991px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
 }
 .footer-logo {
     font-family: $FontFamilyLogo;
     font-size: 25px;
     color: $FooterFontTextColor;
     text-align: center;
+
+    @media screen and (max-width: 991px) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 20px;
+    }
 }
 .footer-autor {
     font-size: 15px;
     font-weight: 300;
     color: $FooterFontTextColor;
     text-align: right;
+
+    @media screen and (max-width: 991px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
 
     &--color {
         color: #ff2b58;
