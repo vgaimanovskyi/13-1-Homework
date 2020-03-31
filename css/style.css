@@ -128,6 +128,58 @@ a:hover {
   }
 }
 
+.hamburger {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  margin: 5px 0;
+}
+
+.hamburger__line {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #333333;
+  border-radius: 4px;
+}
+
+.hamburger__line:nth-child(1) {
+  top: 4px;
+}
+
+.hamburger__line:nth-child(2) {
+  top: 19px;
+}
+
+.hamburger__line:nth-child(3) {
+  bottom: 4px;
+}
+
+.hamburger--open .hamburger__line {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hamburger--open .hamburger__line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(20px);
+          transform: rotate(45deg) translateY(20px);
+}
+
+.hamburger--open .hamburger__line:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translatex(50px);
+          transform: translatex(50px);
+}
+
+.hamburger--open .hamburger__line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-20px);
+          transform: rotate(-45deg) translateY(-20px);
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,6 +199,9 @@ a:hover {
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -154,8 +209,20 @@ a:hover {
   padding: 0 20px 0 0;
 }
 
+@media screen and (max-width: 767px) {
+  .menu__block {
+    padding: 15px 0 !important;
+  }
+}
+
 .menu__block:last-child {
   padding: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__block {
+    text-align: center;
+  }
 }
 
 .menu__link {
@@ -173,7 +240,7 @@ a:hover {
 
 @media screen and (max-width: 767px) {
   .menu__link {
-    font-size: 10px;
+    font-size: 24px;
   }
 }
 
