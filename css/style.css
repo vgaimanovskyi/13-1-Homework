@@ -143,6 +143,8 @@ a:hover {
   width: 100%;
   background-color: #333333;
   border-radius: 4px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .hamburger__line:nth-child(1) {
