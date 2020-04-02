@@ -78,14 +78,19 @@
 
     &__link-img {
         display: block;
-        width: 100px;
-        text-align: center;
     }
 
     &__img {
         width: 55px;
         height: 55px;
         fill: $FontTextColor;
+        padding: 0 10px;
+        box-sizing: content-box;
+
+        @media screen and (max-width: 575px) {
+            width: 40px;
+            height: 40px;
+        }
     }
 }
 .services-menu__link:active .services-menu__img {

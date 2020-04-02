@@ -74,6 +74,10 @@
         display: block;
         background-color: $SubscribeBtnMainColor;
     
+        @media screen and (max-width: 480px) {
+            margin: 0 auto;
+        }
+
         &:focus,
         &:hover {
             color: $SubscribeBtnMainColor;

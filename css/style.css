@@ -53,7 +53,7 @@ a:hover {
 
 .page__mainer {
   max-width: 1200px;
-  min-width: 480px;
+  min-width: 320px;
   width: 100%;
   padding: 0 15px;
   -webkit-box-sizing: border-box;
@@ -132,7 +132,7 @@ a:hover {
   position: relative;
   width: 42px;
   height: 42px;
-  margin: 5px 0;
+  margin: 5px 0 5px auto;
 }
 
 .hamburger__line {
@@ -268,15 +268,27 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .page__home-article {
+    padding: 100px 15px 100px 15px;
+  }
+}
+
 .article {
-  width: 400px;
+  max-width: 400px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 @media screen and (max-width: 767px) {
   .article {
-    width: 300px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .article {
+    max-width: 200px;
   }
 }
 
@@ -579,14 +591,22 @@ a:hover {
 
 .services-menu__link-img {
   display: block;
-  width: 100px;
-  text-align: center;
 }
 
 .services-menu__img {
   width: 55px;
   height: 55px;
   fill: #262626;
+  padding: 0 10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+@media screen and (max-width: 575px) {
+  .services-menu__img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .services-menu__link:active .services-menu__img {
@@ -865,6 +885,12 @@ a:hover {
   background-color: #96b92c;
 }
 
+@media screen and (max-width: 480px) {
+  .subscribe-form__btn {
+    margin: 0 auto;
+  }
+}
+
 .subscribe-form__btn:focus, .subscribe-form__btn:hover {
   color: #96b92c;
   background-color: #fff;
@@ -958,6 +984,12 @@ a:hover {
     background-size: cover;
     height: 546px;
     margin: 0 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-block {
+    height: 310px;
   }
 }
 
@@ -1119,7 +1151,7 @@ a:hover {
 }
 
 .contact-header {
-  width: 370px;
+  max-width: 370px;
   text-align: center;
   margin: 0 auto;
 }
@@ -1253,7 +1285,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 481px) {
   .contact-block {
     max-width: 500px;
     padding: 0;
@@ -1267,6 +1299,12 @@ a:hover {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-block {
+    padding: 0;
   }
 }
 
@@ -1289,6 +1327,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .contact-block__caption {
+    width: 100%;
+  }
+}
+
 .contact-block__text {
   font-size: 20px;
   font-weight: 300;
@@ -1302,7 +1346,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 481px) {
   .contact-block__text {
     width: 80%;
   }
@@ -1338,6 +1382,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footer-date {
+    font-size: 8px;
+  }
+}
+
 .footer-logo {
   font-family: "Pacifico", cursive;
   font-size: 25px;
@@ -1357,6 +1407,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    font-size: 18px;
+  }
+}
+
 .footer-autor {
   font-size: 15px;
   font-weight: 300;
@@ -1373,6 +1429,12 @@ a:hover {
 @media screen and (max-width: 767px) {
   .footer-autor {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-autor {
+    font-size: 8px;
   }
 }
 

@@ -12,14 +12,22 @@
         @media screen and (max-width: 991px) {
             padding: 150px 15px 150px 15px;
         }
+
+        @media screen and (max-width: 576px) {
+            padding: 100px 15px 100px 15px;
+        }
     }
 }
 .article {
-    width: 400px;
+    max-width: 400px;
     box-sizing: border-box;
 
     @media screen and (max-width: 767px) {
-        width: 300px;
+        max-width: 300px;
+    }
+
+    @media screen and (max-width: 480px) {
+        max-width: 200px;
     }
 
     &__caption {
