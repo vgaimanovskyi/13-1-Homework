@@ -1443,6 +1443,12 @@ a:hover {
   font-weight: 700;
 }
 
+.ie10 .contact-form__textarea,
+.ie9 .contact-form__textarea,
+.ie8 .contact-form__textarea {
+  overflow: auto;
+}
+
 /* page */
 /* header */
 /* home */
